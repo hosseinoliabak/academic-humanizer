@@ -9,7 +9,7 @@ description: |
 license: MIT
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 metadata:
-  version: "0.4.0"
+  version: "0.4.1"
   upstream-version: "0.3.3"
   compatibility: "claude-code codex morphmind opencode"
 ---
@@ -48,6 +48,9 @@ natural information flow, and fidelity to the author's meaning.
    concern's location, the observed construction, its effect in context, the proposed academic revision,
    and the meaning that must survive. Give a reason when retaining a flagged construction. Review each
    empirical claim's evidence status separately; a research question or scope limit is not a finding.
+   For feedback about technical phrasing, transitions, provenance conditions, or role placement,
+   consult the relevant [worked feedback examples](references/feedback-examples.md). Preserve
+   meaning-bearing terms and logical relationships even when the feedback flags their precision.
 3. **Rewrite**: same structure and content, all claims and citations preserved, tells removed, over-claims
    matched to evidence, legitimate hedging kept.
 4. **Report**: cleaned text plus a short change log (patterns removed, claims softened or given evidence

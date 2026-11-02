@@ -7,8 +7,8 @@ or a model would use. Future feedback can extend this guide after its meaning an
 ## Apply feedback without changing the scholarship
 
 Keep the author's academic register and established terminology. When suggestions offer Academic,
-Business, Simple, Casual, or Creative variants, prefer the Academic version when its meaning fits. Check it against
-the sentence's actual meaning; a category label is not evidence that two phrases are interchangeable.
+Business, Simple, Casual, or Creative variants, prefer the Academic version when its meaning fits.
+Check it against the sentence's actual meaning; a category label is not evidence that two phrases are interchangeable.
 Do not substitute a more ornate word merely to make the prose sound scholarly.
 
 Audit all supplied concerns, even when the original construction is legitimate. State whether each
@@ -108,6 +108,39 @@ For each future example, record the original span, the author's concern, a candi
 meaning that must remain, and its review status. Keep pending candidates distinct from accepted
 preferences. Detector explanations belong to the feedback record, not to an empirical evidence base.
 Do not add private manuscript passages to a public repository unless the user authorized that scope.
+
+## Technical precision and logical relationships
+
+When feedback flags "Technical Jargon," "Sophisticated Clarity," or "Mechanical Precision," separate
+necessary terminology from unnecessarily dense presentation. Keep terms such as dataset, service
+provider, federated learning, decision threshold, and outlier exposure when they name the actual
+concepts. Improve their placement and explanation rather than replacing them with vague synonyms.
+Identify the term retained and the surrounding wording revised in the audit.
+
+Check the relationship carried by each transition. "Therefore" needs a supported inference from
+preceding text, and "instead" needs an identifiable alternative. Without that context, mark the
+relationship as context-dependent rather than inventing an antecedent or declaring the transition
+redundant. "While" may express simultaneous conditions; retain that relationship when it matters.
+Check the actual grammar rather than copying a detector's grammatical explanation as an observation.
+
+Preserve what a sentence does as well as its facts. An applicability condition, motivation, research
+question, purpose statement, method description, and finding make different claims. Do not replace a
+conditional relevance statement with a general capability statement merely because the latter is
+technically true. Keep a result relationship when recasting words such as "resulting."
+
+Interpret "Lacks Creative Grammar" or "Lacks Creativity" as a request to inspect rhythm, information
+flow, and repetitive framing. Do not introduce grammatical errors, casual asides, metaphors, or
+unnecessary complexity. Recast abstract thesis signposting when a supported actor or purpose makes
+it clearer, without inventing a research procedure or a finding.
+
+Preserve modality and the direction of conditions. "Need not" removes a requirement; it does not
+report the actual deployment. "Only where" limits when a use is allowed; do not weaken it to a
+possibility or turn it into proof that the condition has been satisfied. Keep planned actions distinct
+from completed work. Preserve source-provenance requirements and explicit proxy labels together.
+
+The [worked feedback examples](feedback-examples.md) record nine supplied sentences, their feedback
+categories, candidate academic revisions, and preservation checks. Read the relevant cases rather
+than treating the examples as a substitution dictionary. All candidates remain subject to author review.
 
 ## Audit delivery
 

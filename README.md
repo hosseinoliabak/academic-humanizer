@@ -3,7 +3,7 @@
 <img src="assets/banner.svg" alt="Academic Humanizer: personalized editing for AI-assisted academic drafts, keeping your voice and every claim, number, and citation intact" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.4.0-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.4.1-2f8f57?style=flat-square)
 &nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
 &nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
@@ -100,6 +100,12 @@ question framing, repetitive syntax, stiff formal phrasing, three-part lists, an
 alternatives. It accounts for each supplied concern, including a reason when retaining a construction
 preserves meaning better than replacing it. See [the audit guide](references/academic-audit.md) for
 examples and preservation checks.
+
+The [worked feedback examples](references/feedback-examples.md) add nine supplied cases covering
+technical precision, mechanical transitions, thesis signposting, conditional proxy use, logical roles,
+literature-review tasks, and source-specific terminology. Candidate edits preserve conditions and
+modality; their status remains open to author review. Evidence notes distinguish RAG support from
+separately checked primary sources.
 
 The extension treats detector comments as feedback to examine, not proof of authorship. Its aim is
 clearer academic prose with the same technical meaning. It does not target detector scores. "Collective
