@@ -1,15 +1,17 @@
 ---
 name: academic-humanizer
-version: 0.3.3
 description: |
   Improve the clarity and voice of AI-assisted academic writing (papers, theses, rebuttals) and
-  funding proposals (NSF Project Summary/Description, NIH Specific Aims): preserve scholarly
-  conventions, match claims to evidence (and, for proposals, claims to feasibility), and match the
-  author's own voice. It never changes a number, result, or citation, and it is not for evading
-  AI-use disclosure. Use when editing AI-assisted academic prose or grant proposals.
+  funding proposals. Audit author-supplied feedback, question framing, sentence patterns,
+  formality, parallel lists, and phrase choices while preserving technical meaning, uncertainty,
+  results, and citations. Use when editing academic prose or grant proposals, not to assess
+  authorship or evade AI-use disclosure.
 license: MIT
-compatibility: claude-code codex morphmind opencode
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
+metadata:
+  version: "0.4.0"
+  upstream-version: "0.3.3"
+  compatibility: "claude-code codex morphmind opencode"
 ---
 
 # Academic Humanizer
@@ -28,22 +30,34 @@ vision and feasibility, so the ambition language a paper would trim is appropria
 not the paper layers' stricter trimming, to vision statements.
 
 ## Core principle
-Academic writing already has a correct human voice: neutral, precise, third-person plural ("we"), every
-claim tied to its evidence. The job is to (1) strip the AI *tells* without casualizing, and (2) enforce
-the discipline a general humanizer misses: **every claim earns its number, figure, or citation, and no
-verb is stronger than its evidence.**
+Academic voice should be precise, connected, and appropriate to the author and document. Preserve
+the manuscript's chosen person; "we" is first-person plural, not a required voice. Improve wording
+without making the prose casual or changing its claims. No verb should be stronger than its evidence.
+Author instructions and supplied style references take precedence over generic rewriting advice.
+
+Treat detector labels as supplied feedback to examine, not proof of authorship. Do not predict a
+detector score or promise that a revision will pass a detector. The objective is academic clarity,
+natural information flow, and fidelity to the author's meaning.
 
 ## Process
 1. **Read** the manuscript and any author writing sample; note the document type (paper vs. funding
    proposal) and the target venue or funding agency. For proposals, also apply Layer 6 and preserve
    appropriate vision.
-2. **Audit** (do not edit yet): list each detected pattern with its location and proposed fix, and each
-   empirical claim's evidence status.
+2. **Audit** (before rewriting): read [the academic audit guide](references/academic-audit.md).
+   Inspect the author's supplied concerns as well as the existing layers below. Record each supplied
+   concern's location, the observed construction, its effect in context, the proposed academic revision,
+   and the meaning that must survive. Give a reason when retaining a flagged construction. Review each
+   empirical claim's evidence status separately; a research question or scope limit is not a finding.
 3. **Rewrite**: same structure and content, all claims and citations preserved, tells removed, over-claims
    matched to evidence, legitimate hedging kept.
 4. **Report**: cleaned text plus a short change log (patterns removed, claims softened or given evidence
    pointers, voice notes). Cover everything the original covered: if it had five paragraphs, so does the
    rewrite.
+
+Examples illustrate editing choices, not evidence. Several upstream examples supply hypothetical
+numbers or factual details that are absent from their "before" text. Never import those details into
+a real manuscript. Add a factual detail or evidence pointer only when the supplied or retrieved source
+supports it; otherwise identify the gap. Do not invent a mechanism to make an abstract phrase concrete.
 
 ---
 
@@ -54,8 +68,9 @@ inflated significance ("marking a pivotal moment"); superficial "-ing" tails tha
 vague attributions ("experts argue" with no cite); AI vocabulary (*delve, underscore, intricate,
 tapestry, testament, landscape (abstract), pivotal, showcase, foster, leverage (filler), realm,
 seamless*); copula avoidance ("serves as" -> "is"); negative parallelisms ("not just X, but Y");
-rule-of-three padding; elegant variation (cycling synonyms for one referent); filler
-("it is worth noting that", "in order to"); **overlong, clause-stacked sentences (split them; see 2.11)**;
+rule-of-three padding (audit the content before recasting; keep every substantive item); elegant
+variation (cycling synonyms for one referent); filler
+("it is worth noting that", "in order to"); **overloaded sentences (recast when needed; see 2.11)**;
 and **em-dashes (remove entirely; recast with commas, colons, parentheses, or separate sentences)**.
 
 **Before:** *Additionally, an enduring testament to the method's value is its ability to delve into
@@ -128,10 +143,12 @@ If it matters, the sentence shows it.
 **Before:** *It is worth noting that, importantly, the gain holds across scenarios.*
 **After:** *The gain holds across all three scenarios (Table 4).*
 
-### 2.11 Overlong, clause-stacked sentences
-AI favors long sentences that chain three or four clauses with commas and "which", "that", "while", "with".
-Split them: one idea per sentence, and cut subordinate clauses that carry no weight. **Watch:** sentences
-past ~30 words, or with 3+ subordinate clauses.
+### 2.11 Sentence load and rhythm
+Inspect sentences whose clauses compete for attention or separate the subject from its verb. Length
+alone is not a defect. Split a sentence when it improves the explanation; keep connected reasoning
+together when splitting would make it abrupt. Develop adjacent sentences as a group, varying their
+structure according to information flow rather than a word limit or fixed alternation. A clear, simple
+declarative sentence is acceptable; inspect repeated patterns across the paragraph before changing it.
 **Before:** *Existing methods, though promising, are largely empirical, with unclear principles
 underpinning their behavior, which limits their reliability and further progress.*
 **After:** *Existing methods stay empirical. Their principles are unclear, which limits reliability and
@@ -147,11 +164,14 @@ A general humanizer flattens legitimate scholarly constructs. Keep them.
   *Wrong fix:* turning *"the results suggest X"* into *"the results prove X"*: this manufactures
   over-claiming. Keep the calibrated verb.
 - **Passive voice** is fine when the actor is irrelevant: *"Samples were normalized to total protein."*
-- **First-person plural "we"** is standard; do not rewrite to avoid it.
+- **First-person plural "we"** can be appropriate; preserve the author's chosen person rather than
+  adding or removing it mechanically.
 - **Semicolons and an occasional triple** are fine in moderation. Em-dashes are the exception: remove
   them entirely (Layer 1), recasting with commas, colons, parentheses, or separate sentences.
 - **Formal definitions, named methods/metrics, technical terms, equations, and symbols** stay verbatim.
 - **Never invent, drop, or alter a number, equation, or citation.** Same content; preserve every cite key.
+- **Substantive scope exclusions** remain even when their syntax is recast. Do not remove a qualification,
+  a list item, or a customer condition to make the prose appear less formulaic.
 
 ---
 
@@ -258,4 +278,8 @@ the gap for the author rather than papering over it.
 
 ## Output
 Return the cleaned text plus a short change report: patterns removed (by type), claims softened or given
-evidence pointers, and any voice/venue notes. Confirm that no number, equation, or citation was altered.
+evidence pointers, and any voice/venue notes. When feedback was supplied, explicitly account for every
+concern, including retained constructions and unresolved questions. Distinguish the author's feedback,
+the editor's observations, and proposed wording; do not call a proposal author-approved until accepted.
+Compare the rewrite with the original for numbers, equations, citations, terms, uncertainty, conditions,
+and exclusions. Report any change or unresolved issue rather than making an unchecked preservation claim.

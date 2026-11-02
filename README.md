@@ -3,11 +3,15 @@
 <img src="assets/banner.svg" alt="Academic Humanizer: personalized editing for AI-assisted academic drafts, keeping your voice and every claim, number, and citation intact" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.3.2-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.4.0-2f8f57?style=flat-square)
 &nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
 &nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
 </div>
+
+This fork extends [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer)
+with an academic audit developed from author feedback. The original project background is retained below;
+the [fork extension](#academic-audit-extension-in-this-fork) describes the added workflow.
 
 ## Why we built this
 
@@ -69,7 +73,7 @@ example, an NIH Specific Aims page, and a funded NSF CAREER summary.
 ## Install
 
 ```bash
-git clone https://github.com/AIScientists-Dev/academic-humanizer ~/.claude/skills/academic-humanizer
+git clone https://github.com/hosseinoliabak/academic-humanizer ~/.claude/skills/academic-humanizer
 ```
 
 It is a plain `SKILL.md` plus examples, so it also runs as a skill or system prompt for **Codex** and
@@ -88,6 +92,27 @@ It is a plain `SKILL.md` plus examples, so it also runs as a skill or system pro
 The rules here reflect one group's voice. Fork the repo and adapt them to your own: point it at a few of
 your past papers, keep the checks that fit your field, and adjust the rest. It is meant to be
 personalized, not a one-size-fits-all filter.
+
+### Academic audit extension in this fork
+
+This fork adds a feedback-based academic audit to the upstream skill. The audit explicitly considers
+question framing, repetitive syntax, stiff formal phrasing, three-part lists, and academic phrase
+alternatives. It accounts for each supplied concern, including a reason when retaining a construction
+preserves meaning better than replacing it. See [the audit guide](references/academic-audit.md) for
+examples and preservation checks.
+
+The extension treats detector comments as feedback to examine, not proof of authorship. Its aim is
+clearer academic prose with the same technical meaning. It does not target detector scores. "Collective
+experience," for example, is a candidate alternative to "shared experience" when the meaning fits,
+not a required substitution for every use of "shared."
+
+The output includes the audit, the revised passage, and a short change report. Existing author style
+guides take precedence. Proposed examples remain open to author review; future feedback should record
+the original wording, the concern, the candidate revision, and the meaning that must survive.
+
+For Codex, install this repository's skill folder under `~/.codex/skills/academic-humanizer` and invoke
+it with `$academic-humanizer`. This adds editing instructions; it does not train a model. The fork's
+version and upstream version are recorded in the `metadata` section of `SKILL.md`.
 
 ## How it works
 

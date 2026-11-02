@@ -1,5 +1,11 @@
 # Before / after (academic register)
 
+These examples illustrate editing choices. Unless an example identifies a real source, added numbers,
+results, figures, and methodological details are hypothetical. Do not copy such details into a real
+rewrite unless the manuscript or a checked source supplies them. The feedback-based examples in
+[the academic audit guide](../references/academic-audit.md) separately show revisions that preserve
+the supplied conditions and scope exclusions.
+
 **Before (AI tells + over-claim):**
 > In recent years, graph representation learning has attracted increasing attention. In this paper, we
 > propose a novel method and demonstrate through extensive experiments that it significantly outperforms
