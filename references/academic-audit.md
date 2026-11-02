@@ -104,6 +104,29 @@ Use a natural mixture of sentence lengths. Keep familiar information near the st
 that the next sentence develops near the end when the actual relationship supports it. Avoid
 mechanically repeating the same word or adding causal links that the content does not establish.
 
+When applying the author's saved Practical Research/UDM directives, use the more specific rules in
+that guide rather than treating the general wording above as sufficient. In that author profile:
+
+- Plan a small group of connected sentences together. Put familiar information in the topic position
+  and the point to emphasize in the stress position at the end.
+- Check every adjacent sentence pair. If the next sentence opens with a term or idea from the current
+  sentence, move that term or idea to the end of the current sentence rather than leaving it buried
+  in the middle. Do not weaken this explicit placement rule to "near the end." This does not require
+  every sentence to repeat a term from the previous one or invent a connection between unrelated ideas.
+- Let information order determine the opening. An introductory phrase, dependent clause, participial
+  phrase, or transition can provide natural variation. Do not use a fixed rotation or require every
+  sentence to begin with its grammatical subject or an "-ing" phrase.
+- Keep the subject close to its verb and express the action in the verb when that improves clarity.
+  Keep connected reasoning together rather than splitting it solely to shorten sentences.
+- Use simple English with a calm academic tone. Give each paragraph one main purpose and keep
+  qualifications beside the claims they limit. Read the saved guide for the rest of that author's
+  directives, including technical explanations and focused refreshers.
+
+These are the initial author's recorded preferences, not universal requirements for every academic
+author. Apply another author's explicit guide when it differs. A style guide settles how to arrange
+prose; it cannot identify an unseen antecedent for "therefore" or "instead." Inspect accessible
+manuscript context before asking for it, and request only the missing claim or contrast when needed.
+
 For each future example, record the original span, the author's concern, a candidate revision, the
 meaning that must remain, and its review status. Keep pending candidates distinct from accepted
 preferences. Detector explanations belong to the feedback record, not to an empirical evidence base.

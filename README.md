@@ -3,7 +3,7 @@
 <img src="assets/banner.svg" alt="Academic Humanizer: personalized editing for AI-assisted academic drafts, keeping your voice and every claim, number, and citation intact" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.4.1-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.4.2-2f8f57?style=flat-square)
 &nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
 &nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
@@ -115,6 +115,11 @@ not a required substitution for every use of "shared."
 The output includes the audit, the revised passage, and a short change report. Existing author style
 guides take precedence. Proposed examples remain open to author review; future feedback should record
 the original wording, the concern, the candidate revision, and the meaning that must survive.
+
+Read accessible saved author directives before requesting more style guidance. The audit guide also
+records the initial author's sentence-flow preferences, including varied openings and an explicit
+check of the link between adjacent sentences. Those preferences form an author profile rather than
+a universal template; another author's directions take precedence for their own work.
 
 For Codex, install this repository's skill folder under `~/.codex/skills/academic-humanizer` and invoke
 it with `$academic-humanizer`. This adds editing instructions; it does not train a model. The fork's

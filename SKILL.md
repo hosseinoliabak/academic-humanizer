@@ -9,7 +9,7 @@ description: |
 license: MIT
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 metadata:
-  version: "0.4.1"
+  version: "0.4.2"
   upstream-version: "0.3.3"
   compatibility: "claude-code codex morphmind opencode"
 ---
@@ -40,9 +40,10 @@ detector score or promise that a revision will pass a detector. The objective is
 natural information flow, and fidelity to the author's meaning.
 
 ## Process
-1. **Read** the manuscript and any author writing sample; note the document type (paper vs. funding
-   proposal) and the target venue or funding agency. For proposals, also apply Layer 6 and preserve
-   appropriate vision.
+1. **Read** the manuscript, the author's saved directives identified in the current instructions or
+   an accessible known guide, and any author writing sample. Do not ask the author to repeat style
+   preferences that are already available. Note the document type (paper vs. funding proposal) and
+   the target venue or funding agency. For proposals, also apply Layer 6 and preserve appropriate vision.
 2. **Audit** (before rewriting): read [the academic audit guide](references/academic-audit.md).
    Inspect the author's supplied concerns as well as the existing layers below. Record each supplied
    concern's location, the observed construction, its effect in context, the proposed academic revision,
