@@ -20,6 +20,24 @@ If feedback includes a detector's likelihood, impact label, or authorship explan
 user-supplied feedback. Do not repeat it as a verified property of the phrase or infer authorship
 from a rhetorical question, a declarative sentence, formality, or a three-item list.
 
+## Positive reference examples
+
+Read [the positive examples](positive-examples.md) when applying the initial author's profile. Use
+them to identify strengths to preserve, not just faults to remove. Direct, unadorned declarations and
+neutral technical wording can suit academic writing. Retain them when they establish the setting or
+introduce a topic clearly; judge rhythm and repetition across connected sentences.
+
+The supplied positive and negative feedback sometimes assigns different labels to similar features,
+including simple syntax and precise wording. Do not turn either label into a universal rule. Consider
+the sentence's function, meaning, and fit with its paragraph. Do not infer authorship or predict a
+detector result. Interpret the positive "Journalistic Style" label as neutral, informative academic
+reporting in these examples, not a request to turn the manuscript into news writing.
+
+Positive style feedback does not verify a claim. Keep the evidence review separate, and preserve
+meaning-bearing qualifiers and alternatives. A statement's directness is not a reason to strengthen
+its claim, broaden its population, or remove uncertainty. Report useful wording retained as well as
+changes made. The positive examples are style references, not reusable claims for other manuscripts.
+
 ## Question framing and impersonal tone
 
 Distinguish a genuine unanswered research question from a rhetorical question that only introduces

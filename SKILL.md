@@ -9,7 +9,7 @@ description: |
 license: MIT
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 metadata:
-  version: "0.4.2"
+  version: "0.4.3"
   upstream-version: "0.3.3"
   compatibility: "claude-code codex morphmind opencode"
 ---
@@ -44,6 +44,8 @@ natural information flow, and fidelity to the author's meaning.
    an accessible known guide, and any author writing sample. Do not ask the author to repeat style
    preferences that are already available. Note the document type (paper vs. funding proposal) and
    the target venue or funding agency. For proposals, also apply Layer 6 and preserve appropriate vision.
+   When applying this fork's initial author profile, consult the [positive reference examples](references/positive-examples.md)
+   as well as the supplied concerns. Identify clear academic wording worth retaining.
 2. **Audit** (before rewriting): read [the academic audit guide](references/academic-audit.md).
    Inspect the author's supplied concerns as well as the existing layers below. Record each supplied
    concern's location, the observed construction, its effect in context, the proposed academic revision,
@@ -53,7 +55,8 @@ natural information flow, and fidelity to the author's meaning.
    consult the relevant [worked feedback examples](references/feedback-examples.md). Preserve
    meaning-bearing terms and logical relationships even when the feedback flags their precision.
 3. **Rewrite**: same structure and content, all claims and citations preserved, tells removed, over-claims
-   matched to evidence, legitimate hedging kept.
+   matched to evidence, legitimate hedging kept. Retain wording that already serves its purpose;
+   an audit does not require a change to every sentence.
 4. **Report**: cleaned text plus a short change log (patterns removed, claims softened or given evidence
    pointers, voice notes). Cover everything the original covered: if it had five paragraphs, so does the
    rewrite.
@@ -281,8 +284,9 @@ the gap for the author rather than papering over it.
 ---
 
 ## Output
-Return the cleaned text plus a short change report: patterns removed (by type), claims softened or given
-evidence pointers, and any voice/venue notes. When feedback was supplied, explicitly account for every
+Return the cleaned text plus a short change report: patterns removed (by type), clear wording retained,
+claims softened or given evidence pointers, and any voice/venue notes. When feedback was supplied,
+explicitly account for every
 concern, including retained constructions and unresolved questions. Distinguish the author's feedback,
 the editor's observations, and proposed wording; do not call a proposal author-approved until accepted.
 Compare the rewrite with the original for numbers, equations, citations, terms, uncertainty, conditions,
