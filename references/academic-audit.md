@@ -102,6 +102,8 @@ Do not change "capacity" to "scalability" or "viability" to "profitability" with
 
 ## Academic phrase alternatives
 
+### Shared experience
+
 The supplied example identifies **shared experience** and offers **collective experience** as its
 Academic alternative. Prefer that alternative when the sentence really describes experience held
 collectively. Retain uncertainty, such as "may benefit," when it belongs to the claim.
@@ -115,6 +117,29 @@ When "experience" obscures the intended mechanism, a phrase already supported by
 "information learned from other customers," may be clearer. Do not infer raw-data pooling, federated
 learning, model-parameter exchange, or a training architecture from the word "collective." Do not
 replace the technical phrase "shared detector" merely because it contains the word "shared."
+
+### Highlighted the need
+
+**Supplied vocabulary feedback:** "highlighted the need"; impact label "Very high"; the screenshot
+reports "9.8 x" greater use by an AI model than a human in its document dataset. Record this as
+supplied feedback, not an independently verified frequency, authorship probability, or training weight.
+
+**Supplied Academic alternative:** "underscored the necessity."
+
+Inspect the original phrase for generic emphasis. Prefer the Academic alternative only when it fits
+the full sentence's meaning and the author's plain academic register. It is not an automatic or
+author-approved replacement: "underscore" already appears among the skill's vocabulary concerns,
+and "necessity" may make a stronger claim than the original wording supports. Do not replace one
+formulaic emphasis phrase with another merely because a suggestion is labeled Academic.
+
+Preserve the intended emphasis, degree of need, tense, and relationship to the supporting evidence.
+When recasting the sentence, state the supported actor, observation, or action directly if that makes
+the point clearer. Do not invent a requirement, mechanism, or finding, or upgrade an indication of
+need into proof of necessity. Either expression may remain when its context justifies it, with the
+reason reported in the audit.
+
+**Status:** Phrase recorded; final replacement remains context-dependent because no full sentence
+was supplied. Obtain the sentence when revising that occurrence rather than inventing a context.
 
 ## Connected prose and feedback records
 

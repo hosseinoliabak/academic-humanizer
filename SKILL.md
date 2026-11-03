@@ -9,7 +9,7 @@ description: |
 license: MIT
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 metadata:
-  version: "0.4.3"
+  version: "0.4.4"
   upstream-version: "0.3.3"
   compatibility: "claude-code codex morphmind opencode"
 ---
@@ -72,12 +72,12 @@ supports it; otherwise identify the gap. Do not invent a mechanism to make an ab
 Scan for and fix the general patterns, subject to the academic exceptions in Layer 3:
 inflated significance ("marking a pivotal moment"); superficial "-ing" tails that fake depth
 ("..., highlighting..."); promotional/figurative language ("rich", "vibrant", "groundbreaking");
-vague attributions ("experts argue" with no cite); AI vocabulary (*delve, underscore, intricate,
+vague attributions ("experts argue" with no cite); potentially formulaic vocabulary in context (*delve, underscore, intricate,
 tapestry, testament, landscape (abstract), pivotal, showcase, foster, leverage (filler), realm,
 seamless*); copula avoidance ("serves as" -> "is"); negative parallelisms ("not just X, but Y");
 rule-of-three padding (audit the content before recasting; keep every substantive item); elegant
 variation (cycling synonyms for one referent); filler
-("it is worth noting that", "in order to"); **overloaded sentences (recast when needed; see 2.11)**;
+("it is worth noting that", "in order to", "highlighted the need"); **overloaded sentences (recast when needed; see 2.11)**;
 and **em-dashes (remove entirely; recast with commas, colons, parentheses, or separate sentences)**.
 
 **Before:** *Additionally, an enduring testament to the method's value is its ability to delve into
