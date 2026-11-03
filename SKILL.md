@@ -9,7 +9,7 @@ description: |
 license: MIT
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 metadata:
-  version: "0.4.4"
+  version: "0.4.5"
   upstream-version: "0.3.3"
   compatibility: "claude-code codex morphmind opencode"
 ---

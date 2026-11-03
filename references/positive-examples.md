@@ -56,6 +56,33 @@ support from the review or cited sources when used as a factual assertion. Findi
 does not by itself verify the size of the literature. Do not invent references or findings to make
 the sentence appear supported.
 
+## Longer references selected by the author
+
+The author selected a blend by passage type: the Lavaur paper for concise scientific argument and
+Practical Research for explanatory passages. This preference is confirmed; particular rewrites and
+training targets still require their own review. Do not impose a numerical source weighting or
+assume that every sentence in either reference is an accepted target.
+
+- **Léo Lavaur, Yann Busnel, and Fabien Autrel, Investigating the Impact of Label-flipping Attacks
+  against Federated Learning for Collaborative Intrusion Detection.**
+  [DOI: 10.1016/j.cose.2025.104462](https://doi.org/10.1016/j.cose.2025.104462).
+  The selected local manuscript's abstract and introduction were inspected on PDF pages 2–4.
+  Adopt its connected progression from context to a specific problem, the gap, the investigation,
+  qualified findings, and implications. Keep qualifications beside the claims they limit. Its use
+  of first-person plural does not require changing the thesis's chosen person.
+- **Paul D. Leedy and Jeanne Ellis Ormrod, Practical Research: Planning and Design, 11th edition.**
+  Printed pages 20–21 and 139 were checked alongside the saved author guide. Use its explanatory
+  progression, concrete scenarios, reasons for an action, and interpretation of examples where those
+  features serve the passage. Do not add textbook teaching apparatus or familiar definitions to a
+  concise research argument that does not need them.
+
+Both references contain constructions that may also appear in negative detector feedback. Follow
+the author's meaning, genre, and saved directives rather than treating a phrase as automatically
+acceptable or unacceptable. Use the works as style references without importing their technical
+findings, examples, citations, or author identities into the manuscript. Keep the source PDFs, private
+manuscripts, and training records out of public skill commits; this reference records selection and
+sampled locations, not a redistributed corpus or evidence that a model has been trained.
+
 ## Apply both positive and negative feedback
 
 The author has supplied positive examples of simple declarative syntax and neutral precision as

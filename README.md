@@ -3,7 +3,7 @@
 <img src="assets/banner.svg" alt="Academic Humanizer: personalized editing for AI-assisted academic drafts, keeping your voice and every claim, number, and citation intact" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.4.4-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.4.5-2f8f57?style=flat-square)
 &nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
 &nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
@@ -111,6 +111,11 @@ The [positive examples](references/positive-examples.md) record the author's pre
 unadorned academic tone. The audit now identifies wording worth retaining as well as wording to
 revise. Positive and negative labels are interpreted in context; simple syntax and technical
 precision are not automatically changed, and a positive style example does not verify its facts.
+
+The same reference records the author's selected blend of Lavaur, Busnel, and Autrel's scientific
+argument and Leedy and Ormrod's Practical Research explanations. Apply the references by passage
+type, under the saved author directives. The source PDFs and private training data are not distributed
+with the skill, and selecting references is separate from approving rewrites or training a model.
 
 The extension treats detector comments as feedback to examine, not proof of authorship. Its aim is
 clearer academic prose with the same technical meaning. It does not target detector scores. "Collective
